@@ -49,6 +49,8 @@ You must use this directive as an element! This is because we need exclusive acc
 	</div>
 ```
 
+## Date Time Format
+You can use any date time format supported by the [Angular date filter](https://docs.angularjs.org/api/ng/filter/date).
 
 ## Examples
 
