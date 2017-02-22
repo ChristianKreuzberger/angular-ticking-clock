@@ -5,15 +5,16 @@ a lightweight ticking clock which does not cause any additional digest cycles by
 This is important especially for large applications with many watchers, as digest cycles could potentially cause the
 whole Angular application to evaluate all of their watchers.
 
+This directive is compatible with Angular 1.4 to 1.6. 
+
 ## Installation
 You can install this software via
 ```bash
 npm install angular-ticking-clock
 ```
-aswell as 
-```bash
-bower install angular-ticking-clock
-```
+
+ToDo: We will provide this module on bower soon!
+
 
 ## Usage
 Include the JavaScript File:
@@ -51,7 +52,13 @@ You must use this directive as an element! This is because we need exclusive acc
 
 ## Examples
 
-* [Basic Example](examples/basic.html)
+* [Basic Example with Anggular 1.4](examples/basic.ng1414.html)
+* [Basic Example with Anggular 1.5](examples/basic.ng1511.html)
+* [Basic Example with Anggular 1.6](examples/basic.ng1602.html)
+
 
 ## License
 We are using the [MIT License](LICENSE). Feel free to use this little project as you like, as long as you keep a copy of the license.
+
+## Contribution
+Feel free to fork this repo and create pull-requests. Please always include an example with your pull request!
