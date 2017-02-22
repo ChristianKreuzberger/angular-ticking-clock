@@ -27,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/ChristianKreuzberger/angular-ticking-clock/issues"
   },
-  "homepage": "https://github.com/ChristianKreuzberger/angular-ticking-clock#readme"
+  "homepage": "https://github.com/ChristianKreuzberger/angular-ticking-clock#readme",
+  "devDependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.1"
+  }
 }
