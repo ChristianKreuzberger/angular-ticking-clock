@@ -19,9 +19,12 @@ ToDo: We will provide this module on bower soon!
 ## Usage
 Include the JavaScript File:
 ```HTML
-<script src="node_modules/angular-ticking-clock/src/angular-ticking-clock.js"></script>
+<script src="node_modules/angular-ticking-clock/dist/angular-ticking-clock.js"></script>
 ```
-*Note*: There will be a minified version of this library soon.
+or use the minified version
+```HTML
+<script src="node_modules/angular-ticking-clock/dist/angular-ticking-clock.min.js"></script>
+```
 
 In your Angular JS Application you have to inject ``angular-ticking-clock`` as a module:
 ```javascript

@@ -1,6 +1,6 @@
 {
   "name": "angular-ticking-clock",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Angular Ticking Clock Directive ",
   "main": "index.js",
   "directories": {

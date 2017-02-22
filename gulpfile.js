@@ -9,9 +9,17 @@ var dest_js_file_min = "dist/angular-ticking-clock.min.js";
 var dest_Js_file = "dist/angular-ticking-clock.js";
 
 
+
+gulp.task('build', ['minify', 'copy']);
+
 gulp.task('minify', function() {
     return gulp.src(src_js_file)
     	.pipe(gulpUglify())
     	.pipe(gulpRename({ suffix: '.min' }))
         .pipe(gulp.dest(destinationFolder));
+});
+
+gulp.task('copy', function() {
+	return gulp.src(src_js_file)
+		.pipe(gulp.dest(destinationFolder));
 });
