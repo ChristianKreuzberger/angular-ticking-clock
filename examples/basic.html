@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Angular Ticking Clock Basic Example</title>
+
+	<!-- Include Angular -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
+
+	<!-- Include Angular Ticking Clock -->
+	<script src="../src/angular-ticking-clock.js"></script>
+
+	<script type="text/javascript">
+		var app = angular.module('app', ['angular-ticking-clock']);
+
+		app.controller('MainController', ["$scope", function($scope) {
+			console.log('In Main Controller');
+
+			$scope.digestCycles = 0;
+
+			$scope.$watch(function() {}, function() {
+				$scope.digestCycles++;
+			});
+		}]);
+	</script>
+</head>
+<body ng-app="app">
+    <div ng-controller="MainController">
+    	<div>
+    		Number of digest cycles for this app: {{ digestCycles }}
+    	</div>
+
+	    <div>
+	    	Clock Without Any Configuration: :<br />
+		    <!-- Clock without any config -->
+		    <ticking-clock></ticking-clock>
+		</div>
+
+
+		<div>
+			Clock with date-time-format set:<br />
+		    <!-- Clock with a date-time-format -->
+		    <ticking-clock date-time-format="yyyy/mm/dd HH:mm:ss"></ticking-clock>
+		</div>
+
+		<div>
+			Clock with date-time-format and update-interval (1s) set:<br />
+		    <!-- Clock with a date-time-format which automatically updates -->
+		    <ticking-clock date-time-format="yyyy/mm/dd HH:mm:ss" update-interval="1000"></ticking-clock>
+		</div>
+
+    </div>
+</body>
+</html>
+

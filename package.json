@@ -1,0 +1,31 @@
+{
+  "name": "angular-ticking-clock",
+  "version": "1.0.0",
+  "description": "Angular Ticking Clock Directive ",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianKreuzberger/angular-ticking-clock.git"
+  },
+  "keywords": [
+    "Angular",
+    "Ticking",
+    "Clock",
+    "without",
+    "digest",
+    "cycles"
+  ],
+  "author": "Christian Kreuzberger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChristianKreuzberger/angular-ticking-clock/issues"
+  },
+  "homepage": "https://github.com/ChristianKreuzberger/angular-ticking-clock#readme"
+}
